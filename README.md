@@ -33,7 +33,7 @@ describes all the elements and how they interact with each other.
 2. action    | x: int = 10
 3. io        | x := input()
 4. condition | x > 0
-5. cycle     | for x in 0..5: ...
+5. cycle     | for x in 0..10: ...
 </pre>
 
 You can look in the examples directory. 
