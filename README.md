@@ -30,10 +30,10 @@ describes all the elements and how they interact with each other.
 ### Pseolang
 <pre>
 1. alg       | Begin/End
-2. action    | a := 3
-3. condition | a > 3
-4. io        | a := input()
-5. cycle     | for el in 0..5: TO_DO...
+2. action    | a: int = 10
+3. io        | a := input()
+4. condition | a > 0
+5. cycle     | for el in 0..5: ...
 </pre>
 
 You can look in the examples directory. 
