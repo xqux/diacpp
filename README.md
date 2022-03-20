@@ -1,7 +1,8 @@
 # DiaCpp
 
 ## About
-**DiaCpp** — program for displaying block diagrams from local files.
+**DiaCpp** — program for displaying block diagrams from local files, 
+written in C++17 using the Qt framework.
 
 ## Project structure
 The project uses the MVP pattern to organize communication with users.
@@ -41,3 +42,6 @@ Try loading the files into the program to fully understand the commands.
 
 ### Pseorend
 ...
+
+## Logging
+All statuses (errors, warnings, successes) are automatically added to the report.log file.
