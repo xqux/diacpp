@@ -22,8 +22,8 @@ It's recommended to run in **Qt Creator**.
 
 ## Supported Formats
 For an example of work, we use:
-* **Pseolang** as a parser language;
-* **Pseorend** as a diagram renderer.
+* **Pseolang** as a diagram parser language;
+* **Pseorend** as a diagram display render.
 
 There is a consistent interface between these modes that 
 describes all the elements and how they interact with each other.
