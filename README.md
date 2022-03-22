@@ -30,12 +30,20 @@ describes all the elements and how they interact with each other.
 
 ### Pseolang
 <pre>
+0. comment   | Your custom text
 1. alg       | Begin/End
 2. action    | a: int = 10
 3. io        | a := input(), b := input()
 4. condition | a > 0
 5. cycle     | while a != 10
 </pre>
+
+**The syntax is**:
+1. The program reads the first first word of the string and compares it with the operations;
+2. Some number of spaces are read;
+3. Service non-word characters are read (e.g. -, |, :, >>);
+4. Some number of spaces are read;
+5. Everything that comes next is the text on the object.
 
 You can look in the examples directory. 
 Try loading the files into the program to fully understand the commands.
