@@ -20,6 +20,8 @@ but should work correctly on any compatible platform: GNU/Linux, Microsoft Windo
 
 It's recommended to run in **Qt Creator**.
 
+To change Qt to version 6, uncomment the line in the CMake file.
+
 ## Supported Formats
 For an example of work, we use:
 * **Pseolang** as a diagram parser language;
@@ -41,7 +43,7 @@ describes all the elements and how they interact with each other.
 **The syntax is**:
 1. The program reads the first first word of the string and compares it with the operations;
 2. Some number of spaces are read;
-3. Service non-word characters are read (e.g. -, |, :, >>);
+3. Service non-word characters are read (e.g. -, |, :, ::, >>, ->);
 4. Some number of spaces are read;
 5. Everything that comes next is the text on the object.
 
