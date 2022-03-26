@@ -33,10 +33,10 @@ describes all the elements and how they interact with each other.
 ### Pseolang
 <pre>
 0. comment   | Your custom text
-1. alg       | Begin/End
+1. alg       | Start/End text
 2. action    | a: int = 10
 3. io        | a := input(), b := input()
-4. condition | a > 0
+4. decision  | a > 0
 5. cycle     | while a != 10
 </pre>
 
