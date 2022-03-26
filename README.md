@@ -34,10 +34,11 @@ describes all the elements and how they interact with each other.
 <pre>
 0. comment  | Your custom text
 1. alg      | Start/End text
-2. action   | a: int = 10
+2. process  | a: int = 10
 3. io       | a := input(), b := input()
 4. decision | a > 0
 5. cycle    | while a != 10
+6. =>       | ...
 </pre>
 
 **The syntax is**:
