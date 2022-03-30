@@ -12,8 +12,10 @@ Using the structure of this application, it would even be possible to separate u
 This particular implementation doesn't emphasize this feature using the Qt framework.
 
 ## Dependencies
-* 5.15.2 ≤ Qt ≤ 6.2.3;
-* CMake 3.5+.
+* [x] **C++ version**: 17+;
+* [x] **Qt version**: 5.15.2 ≤ Qt ≤ 6.2.3;
+* [x] **CMake version**: 3.5+;
+* [x] **Compilers**: gcc, clang.
 
 The project was successfully built and run on Fedora Gnome 35 with Qt packages installed, 
 but should work correctly on any compatible platform: GNU/Linux, Microsoft Windows, macOS and BSD.
