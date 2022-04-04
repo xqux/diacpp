@@ -35,15 +35,15 @@ describes all the elements and how they interact with each other.
 ### Pseolang
 #### Syntax
 
-| Instruction | Activity                                      | Description                                                                       |
-| ----------- | --------------------------------------------- | --------------------------------------------------------------------------------- |
-| #           | My TRA LA LA                                  | The comment that contains your custom noshowd text                                |
-| alg         | Solving the mathematical problem              | The start/end of the algorithm that contains diagram text                         |
-| process     | const a: int = 10<br/>var b, c<br/>d += a + 1 | The process of the algorithm that contains diagram text                           |
-| io          | a := input()<br/>output(a)                    | The input/output process of the algorithm that contains diagram text              |
-| decision    | ¬(a > 0 ∧ a ≠ 10)                             | The condition (if-statement) of the algorithm that contains diagram text          |
-| loop        | label-1                                       | The cycle of the algorithm (makes a label for the jump / jumps to the loop label) |
-| =>          | True<br/>YES<br/>off                          | Mark the next arrow with the text (by default, arrows contain no text)            |
+| Instruction | Activity                                      | Description                                                                  |
+| ----------- | --------------------------------------------- | ---------------------------------------------------------------------------- |
+| #           | My TRA LA LA                                  | The comment that contains your custom noshowd text                           |
+| alg         | Solving the mathematical problem              | The start/end of the algorithm that contains diagram text                    |
+| process     | const a: int = 10<br/>var b, c<br/>d += a + 1 | The process of the algorithm that contains diagram text                      |
+| io          | a := input()<br/>output(a)                    | The input/output process of the algorithm that contains diagram text         |
+| decision    | ¬(a > 0 ∧ a ≠ 10)                             | The condition (if-statement) of the algorithm that contains diagram text     |
+| loop        | label-1                                       | The cycle of the algorithm (makes a label for the jump / jumps to the label) |
+| =>          | True<br/>YES<br/>off                          | Mark the next arrow with the text (by default, arrows contain no text)       |
 
 
 
