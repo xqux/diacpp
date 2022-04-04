@@ -38,7 +38,7 @@ describes all the elements and how they interact with each other.
 | Instruction | Activity                                      | Description                                                                       |
 | ----------- | --------------------------------------------- | --------------------------------------------------------------------------------- |
 | #           | My TRA LA LA                                  | The comment that contains your custom noshowd text                                |
-| alg         | Camping in the woods                          | The start/end of the algorithm that contains diagram text                         |
+| alg         | Solving the mathematical problem              | The start/end of the algorithm that contains diagram text                         |
 | process     | const a: int = 10<br/>var b, c<br/>d += a + 1 | The process of the algorithm that contains diagram text                           |
 | io          | a := input()<br/>output(a)                    | The input/output process of the algorithm that contains diagram text              |
 | decision    | ¬(a > 0 ∧ a ≠ 10)                             | The condition (if-statement) of the algorithm that contains diagram text          |
