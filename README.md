@@ -12,10 +12,10 @@ Using the structure of this application, it would even be possible to separate u
 This particular implementation doesn't emphasize this feature using the Qt framework.
 
 ## Dependencies
-* [x] **C++ version**: 17+;
-* [x] **Qt version**: 5.15.2 ≤ Qt ≤ 6.2.3;
-* [x] **CMake version**: 3.5+;
-* [x] **Compilers**: gcc, clang.
+- [x] **C++ version**: 17+;
+- [x] **Qt version**: 5.15.2 ≤ Qt ≤ 6.2.3;
+- [x] **CMake version**: 3.5+;
+- [x] **Compilers**: gcc, clang.
 
 The project was successfully built and run on Fedora Gnome 35 with Qt packages installed, 
 but should work correctly on any compatible platform: GNU/Linux, Microsoft Windows, macOS and BSD.
@@ -26,8 +26,8 @@ To change Qt to version 6, uncomment the line in the CMake file.
 
 ## Supported Formats
 For an example of work, we use:
-* **Pseolang** as a diagram parser language;
-* **Pseorend** as a diagram display render.
+- **Pseolang** as a diagram parser language;
+- **Pseorend** as a diagram display render.
 
 There is a consistent interface between these modes that 
 describes all the elements and how they interact with each other.
@@ -45,7 +45,7 @@ describes all the elements and how they interact with each other.
 | loop        | label-1                                       | The cycle of the algorithm (makes a label for the jump / jumps to the label) |
 | =>          | True<br/>YES<br/>off                          | Mark the next arrow with the text (by default, arrows contain no text)       |
 
-
+> **Commands** are a special type of instructions consisting only of words. These include *alg*, *process*, *io* and *decision*.
 
 #### Parsing Process
 1. The parser reads the indent ...
@@ -58,8 +58,26 @@ describes all the elements and how they interact with each other.
 You can look in the examples directory. 
 Try loading the files into the program to fully understand the commands.
 
+#### Remarks
+- Commands aren't case sensitive;
+- If a command is preceded by a dot, a current branch ends;
+- If there is a "#" at the beginning of the line, then subsequent characters of the line are ignored;
+- Instruction separators are newlines and indented spaces/tabs.
+
+#### Messages
+* 🚫 Unknown command;
+* ...
+
 ### Pseorend
-...
+#### Remarks
+- Text must be provided in UTF-8 format;
+- If the text doesn't fit on the diagram, then "..." is displayed;
+- There is a limit on the number of branches (2);
+- It's possible to set the size of the figures and the length of the relations through CMake. see...
+
+#### Messages
+- 🚫 Too Many Branches;
+- ⚠️ Non-Fitting Text.
 
 ## Logging
 All statuses (errors, warnings, successes) are automatically added to the report.log file.
