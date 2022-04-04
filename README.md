@@ -47,12 +47,13 @@ describes all the elements and how they interact with each other.
 
 
 
-**The syntax is**:
-1. The program reads the first first word of the string and compares it with the operations;
-2. Some number of spaces are read;
-3. Service non-word characters are read (e.g. -, |, :, ::, >>, ->);
-4. Some number of spaces are read;
-5. Everything that comes next is the text on the object.
+#### Parsing Process
+1. The parser reads the indent ...
+2. The parser reads the first first word of the string and compares it with the operations;
+3. Some number of spaces are read;
+4. Service non-word characters are read (e.g. -, |, :, ::, >>, ->);
+5. Some number of spaces are read;
+6. Everything that comes next is the text on the object.
 
 You can look in the examples directory. 
 Try loading the files into the program to fully understand the commands.
