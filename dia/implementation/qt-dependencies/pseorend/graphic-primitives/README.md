@@ -7,9 +7,11 @@ it's a good way to build geometric primitives.
 If the text doesn't fit into the primitive, then instead it will try to display "···",
 if this text also doesn't fit, then nothing will be displayed.
 
-# Figures
-The main figures are stored in syntactic-blocks,
-each element of which is inherited from GraphicFigure.
+
+
+# Blocks
+All blocks are represented by figures and stored in *syntactic-blocks*,
+each element of which is inherited from *GraphicFigure*.
 
 | Instruction | Figure        |
 | ----------- | ------------- |
@@ -25,5 +27,7 @@ Only a parallelogram also has a slope.
 
 # Relations
 There are 2 kinds of arrows,
-each of which inherits from GraphicArrow and TextLimiter.
+each of which inherits from *MarkedArrow* and *TextLimiter*.
+Note also that *MarkedArrow* in turn inherits from *GraphicArrow*.
 
+> You can see the full inheritance scheme on the *uml class diagram*.
