@@ -1,7 +1,7 @@
 # DiaCpp
 
 ## About
-**DiaCpp** — program for displaying block diagrams from local files, 
+**DiaCpp** — the program and the project for displaying block diagrams from local files, 
 written in C++17 using the Qt framework.
 
 ## Project Structure
