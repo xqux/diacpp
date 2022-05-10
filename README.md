@@ -71,7 +71,7 @@ Try loading the files into the program to fully understand the commands.
 ### Pseorend
 #### Remarks
 - Text must be provided in UTF-8 format;
-- If the text doesn't fit on the diagram, then "..." is displayed;
+- If the text doesn't fit on the diagram, then "···" is displayed;
 - There is a limit on the number of branches (2);
 - It's possible to set the size of the figures and the length of the relations through CMake. see...
 
