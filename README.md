@@ -2,14 +2,16 @@
 
 ## About
 **DiaCpp** — the program and the project for displaying block diagrams from local files, 
-written in C++17 using the Qt framework.
+written in [C++17](https://en.cppreference.com/w/cpp/17) using the [Qt Framework](https://doc.qt.io).
 
 ## Project Structure
-The project uses the MVP pattern to organize communication with users.
+The project uses the ~~MVP pattern~~ to organize communication with users.
 
-The data model and presentation are intentionally separated to provide system flexibility. 
+The ~~data model~~ and ~~presentation~~ are intentionally separated to provide system flexibility. 
 Using the structure of this application, it would even be possible to separate user input from output. 
-This particular implementation doesn't emphasize this feature using the Qt framework.
+This particular implementation doesn't emphasize this feature using Qt Framework.
+
+All qt dependencies are in a ~~separate directory~~.
 
 ## Dependencies
 - [x] **C++ version**: 17+;
@@ -18,19 +20,24 @@ This particular implementation doesn't emphasize this feature using the Qt frame
 - [x] **Compilers**: gcc, clang.
 
 The project was successfully built and run on Fedora Gnome 35 with Qt packages installed, 
-but should work correctly on any compatible platform: GNU/Linux, Microsoft Windows, macOS and BSD.
+but should work correctly on [any compatible platform](https://doc.qt.io/qt/supported-platforms.html):
+GNU/Linux, Microsoft Windows, macOS and BSD.
 
-It's recommended to run in **Qt Creator**.
+You should to run this project in [Qt Creator](https://www.qt.io/download).
 
-To change Qt to version 6, uncomment the line in the CMake file.
+To change Qt to version 6, uncomment the line in the ~~CMake file~~.
 
-## Supported Formats
-For an example of work, we use:
-- **Pseolang** as a diagram parser language;
-- **Pseorend** as a diagram display render.
+## Formats
+**The language** describes the interaction between elements. There can be several parsers for one language.
+
+**The renderer** draws the ~~language representation~~ according to its parameters.
 
 There is a consistent interface between these modes that 
 describes all the elements and how they interact with each other.
+
+For an example of work, we use:
+- **Pseolang** as a diagram parser language;
+- **Pseorend** as a diagram display render.
 
 ### Pseolang
 #### Syntax
@@ -45,9 +52,9 @@ describes all the elements and how they interact with each other.
 | loop        | label-1                                       | The cycle of the algorithm (makes a label for the jump / jumps to the label) |
 | =>          | True<br/>YES<br/>off                          | Mark the next arrow with the text (by default, arrows contain no text)       |
 
-> **Commands** are a special type of instructions consisting only of words. These include *alg*, *process*, *io* and *decision*.
+//! FIXME
+> **Commands** include *alg*, *process*, *io* and *decision*.
 
-#### Parsing Process
 1. The parser reads the indent ...
 2. The parser reads the first first word of the string and compares it with the operations;
 3. Some number of spaces are read;
@@ -55,13 +62,24 @@ describes all the elements and how they interact with each other.
 5. Some number of spaces are read;
 6. Everything that comes next is the text on the object.
 
-You can look in the examples directory. 
+**RegExp**: //!
+
+// FIXME
+> **Operations** include *#* and *=>*.
+
+1. ...
+2. ..
+3. .
+
+**RegExp**: //!
+
+You can look in the ~~examples directory~~.
 Try loading the files into the program to fully understand the commands.
 
 #### Remarks
-- Commands aren't case sensitive;
+- Commands are case sensitive;
 - If a command is preceded by a dot, a current branch ends;
-- If there is a "#" at the beginning of the line, then subsequent characters of the line are ignored;
+- If there is a '#' at the beginning of the line, then subsequent characters of the line are ignored;
 - Instruction separators are newlines and indented spaces/tabs.
 
 #### Messages
@@ -71,13 +89,14 @@ Try loading the files into the program to fully understand the commands.
 ### Pseorend
 #### Remarks
 - Text must be provided in UTF-8 format;
-- If the text doesn't fit on the diagram, it tries to display "···" or nothing;
+- Text supports ligatures;
+- If the text doesn't fit on the diagram, it tries to display '···' or nothing (hover over object to see the text);
 - There is a limit on the number of branches (2);
-- It's possible to set the size of the figures and the length of the relations through CMake. see...
+- It's possible to set the size of the figures and the length of the relations ~~through CMake~~.
 
 #### Messages
 - 🚫 Too Many Branches;
 - ⚠️ Non-Fitting Text.
 
 ## Logging
-All statuses (errors, warnings, successes) are automatically added to the report.log file.
+All statuses (errors, warnings, successes) are automatically added to the ~~report.log~~ file.
