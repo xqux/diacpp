@@ -1,15 +1,15 @@
 # DiaCpp
 
 ## About
-**DiaCpp** — the program and the project for displaying block diagrams from local files, 
+**DiaCpp** — the program and the project for displaying block diagrams from local files,
 written in [C++17](https://en.cppreference.com/w/cpp/17) using the [Qt Framework](https://doc.qt.io).
 
 ## Project Structure
 The project uses the ~~MVP pattern~~ to organize communication with users.
 
-The ~~data model~~ and ~~presentation~~ are intentionally separated to provide system flexibility. 
-Using the structure of this application, it would even be possible to separate user input from output. 
-This particular implementation doesn't emphasize this feature using the Qt Framework.
+The ~~data model~~ and ~~presentation~~ are intentionally separated to provide system flexibility.
+Using the structure of this application, it would even be possible to separate user input from output.
+This particular implementation doesn't emphasize this feature using the [Qt Framework](https://doc.qt.io).
 
 All qt dependencies are in a ~~separate directory~~.
 
@@ -19,7 +19,7 @@ All qt dependencies are in a ~~separate directory~~.
 - [x] **CMake version**: 3.5+;
 - [x] **Compilers**: gcc, clang.
 
-The project was successfully built and run on Fedora Gnome 35 with Qt packages installed, 
+The project was successfully built and run on Fedora Gnome 35 with Qt packages installed,
 but should work correctly on [any compatible platform](https://doc.qt.io/qt/supported-platforms.html):
 GNU/Linux, Microsoft Windows, macOS and BSD.
 
@@ -32,7 +32,7 @@ To change Qt to version 6, uncomment the line in the ~~CMake file~~.
 
 **The renderer** draws the ~~language representation~~ according to its parameters.
 
-There is a consistent interface between these modes that 
+There is a ~~consistent interface~~ between these modes that
 describes all the elements and how they interact with each other.
 
 For an example of work, we use:
@@ -58,7 +58,7 @@ For an example of work, we use:
 1. The parser reads the indent ...
 2. The parser reads the first first word of the string and compares it with the operations;
 3. Some number of spaces are read;
-4. Service non-word characters are read (e.g. -, |, :, ::, >>, ->);
+4. Service non-word characters are read (e.g. -, |, :, ::, >>, ->); //! ADD ALL VARS
 5. Some number of spaces are read;
 6. Everything that comes next is the text on the object.
 
