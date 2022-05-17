@@ -9,7 +9,7 @@ The project uses the ~~MVP pattern~~ to organize communication with users.
 
 The ~~data model~~ and ~~presentation~~ are intentionally separated to provide system flexibility. 
 Using the structure of this application, it would even be possible to separate user input from output. 
-This particular implementation doesn't emphasize this feature using Qt Framework.
+This particular implementation doesn't emphasize this feature using the Qt Framework.
 
 All qt dependencies are in a ~~separate directory~~.
 
