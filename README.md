@@ -98,5 +98,13 @@ Try loading the files into the program to fully understand the commands.
 - 🚫 Too Many Branches;
 - ⚠️ Non-Fitting Text.
 
-## Logging
-All statuses (errors, warnings, successes) are automatically added to the ~~report.log~~ file.
+## Generated Files
+There are some files that are created in the application directory.
+You can remove them or change the name in the ~~main file~~.
+
+### Logging
+All statuses (errors, warnings, successes) are automatically added to the **report.log** file.
+
+### Parameters
+If the appropriate preprocessor directive is used, then a **config.ini** file is created.
+This file contains the state of the application's main window.
