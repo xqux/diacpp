@@ -100,7 +100,7 @@ Try loading the files into the program to fully understand the commands.
 
 ## Generated Files
 There are some files that are created in the application directory.
-You can turn them off or change the name in the ~~main file~~.
+You can turn them off or change the name in the ~~main project file~~.
 
 ### Logging
 All statuses (errors, warnings, successes) are automatically added to the **report.log** file.
