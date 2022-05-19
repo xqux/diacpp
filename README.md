@@ -36,10 +36,13 @@ To change Qt to version 6, uncomment the line in the ~~CMake file~~.
 ## Formats
 **The language** describes the interaction between elements. There can be several parsers for one language.
 
-**The renderer** draws the ~~language representation~~ according to its parameters.
+**The renderer** draws the __language representation__ according to its parameters.
+Different renderers can show the same data in different ways (e.g. colors, shapes, shape directionality, etc.)
 
-There is a ~~consistent interface~~ between these modes that
-describes all the elements and how they interact with each other.
+**Language representation** — a consistent interface that describes all elements and how they interact with each other.
+Provided by some **language** for some **parser**.
+
+___
 
 For an example of work, we use:
 - **Pseolang** as a diagram parser language;
