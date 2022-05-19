@@ -46,6 +46,8 @@ For an example of work, we use:
 - **Pseorend** as a diagram display render.
 
 ### Pseolang
+Parsing is done via [regular expressions](https://en.cppreference.com/w/cpp/regex/ecmascript) using special rules.
+
 #### Syntax
 
 | Instruction | Activity                                      | Description                                                                  |
@@ -68,16 +70,12 @@ For an example of work, we use:
 5. Some number of spaces are read;
 6. Everything that comes next is the text on the object.
 
-**RegExp**: //!
-
 // FIXME
 > **Operations** include *#* and *=>*.
 
 1. ...
 2. ..
 3. .
-
-**RegExp**: //!
 
 You can look in the ~~examples directory~~.
 Try loading the files into the program to fully understand the commands.
