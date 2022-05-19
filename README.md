@@ -13,6 +13,12 @@ This particular implementation doesn't emphasize this feature using the [Qt Fram
 
 All qt dependencies are in a ~~separate directory~~.
 
+### User interface
+1. A global menu with the ability to upload a file;
+2. Support for the drag-and-drop GUI window;
+3. A diagram output in the main window;
+4. Display an error in the status bar and add it to the log file.
+
 ## Dependencies
 - [x] **C++ version**: 17+;
 - [x] **Qt version**: 5.15.2 ≤ Qt ≤ 6.2.3;
