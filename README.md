@@ -106,8 +106,12 @@ Try loading the files into the program to fully understand the commands.
 - ⚠️ Non-Fitting Text.
 
 ## Generated Files
+> You can only run 1 application instance because files can't be opened for writing more than once.
+
 There are some files that are created in the application directory.
 You can turn them off or change the name in the ~~main project file~~.
+
+By default, the program doesn't use external directories as storage.
 
 ### Logging
 All statuses (errors, warnings, successes) are automatically added to the **report.log** file.
