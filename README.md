@@ -64,7 +64,7 @@ Parsing is done via [regular expressions](https://en.cppreference.com/w/cpp/rege
 | =>          | True<br/>YES<br/>off                          | Mark the next arrow with the text (by default, arrows contain no text)       |
 
 //! FIXME
-> **Commands** include *alg*, *process*, *io* and *decision*.
+> **Commands** include *alg*, *process*, *io*, *decision* and *loop*.
 
 1. The parser reads the indent ...
 2. The parser reads the first first word of the string and compares it with the operations;
