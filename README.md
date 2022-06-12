@@ -1,7 +1,7 @@
-# DiaCpp
+# DiaCpp Project
 
 ## About
-**DiaCpp** — the cross-platform program and the project for displaying block diagrams from local files,
+**DiaCpp** — the project and the cross-platform program for displaying block diagrams from local files,
 written in [C++17](https://en.cppreference.com/w/cpp/17) using the [Qt Framework](https://doc.qt.io).
 
 ## Project Structure
